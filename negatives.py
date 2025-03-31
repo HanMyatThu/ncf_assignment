@@ -8,6 +8,7 @@ user_positive_items = df.groupby('userId')['movie_idx'].apply(set).to_dict()
 all_items = set(df['movie_idx'].unique())
 
 negatives = []
+# NCF paper (He et al., 2017) used 4 negatives per positive
 num_neg_per_pos = 4 
 
 print("Generating negative samples...")
