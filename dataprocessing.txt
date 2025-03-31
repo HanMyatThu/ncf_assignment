@@ -1,0 +1,6 @@
+- when processing movies.dat. the files contain special characters. , cannot be read with the default
+'utf-8' codec. 
+ use a specific encoding "ISO-8859-1"
+
+- ratings >= 4 as positive interactions (label = 1), otherwise it's negative (label = 0),
+- split dataset into training 70%, validation 15%, testing 15%. (Currently based on all 1M records )
