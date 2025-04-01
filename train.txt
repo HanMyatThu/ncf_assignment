@@ -1,0 +1,17 @@
+first train ( num_epochs=20, embedding_dim=64, mlp_dims=[128, 64, 32], dropout=0.2)
+
+Evaluation complete.
+Recall@10: 0.1901
+NDCG@10: 0.1028
+
+Seem so basic
+
+2nd train -> increase more paras ( embedding_dim=128, mlp_dims=[256, 128, 64] , lr = 0.001)
+Evaluation complete.
+Recall@10: 0.1901
+NDCG@10: 0.1027
+
+3rd train -> increase more (embedding_dim = 128, mlp_dims = [256, 128, 64],
+dropout = 0.3,
+lr = 0.0005,
+patience = 7 )

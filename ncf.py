@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 class NCF(nn.Module):
-    def __init__(self, num_users, num_items, embedding_dim=128, mlp_dims=[256, 128, 64], dropout=0.2):
+    def __init__(self, num_users, num_items, embedding_dim=128, mlp_dims=[256, 128, 64], dropout=0.3):
         super(NCF, self).__init__()
 
         # Embedding layers

@@ -21,11 +21,11 @@ num_items = max(train_df["movie_idx"].max(), val_df["movie_idx"].max(), test_df[
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # model loading
-model = NCF(num_users, num_items, embedding_dim=64, mlp_dims=[128, 64, 32], dropout=0.2)
+model = NCF(num_users, num_items, embedding_dim=128, mlp_dims=[256, 128, 64], dropout=0.2)
 model.load_state_dict(torch.load("ncf_model.pt", map_location=device, weights_only=True))
 model.to(device)
 model.eval()
-print("✅ Model loaded.")
+print("Model loaded.")
 
 # build user item history
 all_items = set(range(num_items))
