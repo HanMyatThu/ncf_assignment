@@ -4,7 +4,7 @@ import torch.optim as optim
 from tqdm import tqdm
 import numpy as np
 
-def train_model(model, train_loader, val_loader, num_epochs=20, lr=0.0005, patience=5, device='cpu'):
+def train_model(model, train_loader, val_loader, num_epochs=30, lr=0.001, patience=7, device='cpu'):
     model = model.to(device)
     # Binary Cross Entropy Loss
     criterion = nn.BCELoss()

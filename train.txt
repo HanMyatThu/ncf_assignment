@@ -15,3 +15,15 @@ NDCG@10: 0.1027
 dropout = 0.3,
 lr = 0.0005,
 patience = 7 )
+Evaluation complete.
+Recall@10: 0.1859
+NDCG@10: 0.0994
+
+
+4th train -> 
+embedding_size=64, mlp_layers=[128, 64], dropout=0.2
+num_epochs=30, lr=0.001, patience=7,
+Evaluating: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6036/6036 [09:24<00:00, 10.69it/s]
+Evaluation complete.
+Recall@10: 0.1896
+NDCG@10: 0.1029
