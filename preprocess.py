@@ -2,18 +2,16 @@ import pandas as pd
 
 df = pd.read_csv("./dataset/ratings.csv")
 
-df.userId = df.userId - 1
+# Convert to 0-based indexing
+df["userId"] = df["userId"] - 1
+unique_movies = df["movieId"].unique()
+movie2idx = {movie: idx for idx, movie in enumerate(unique_movies)}
+df["movie_idx"] = df["movieId"].map(movie2idx)
 
-unique_movie_ids = set(df.movieId.values)
-movie2idx = {movie_id: idx for idx, movie_id in enumerate(unique_movie_ids)}
-df['movie_idx'] = df.movieId.map(movie2idx)
+# Keep only positive interactions (ratings >=4)
+df = df[df["rating"] >= 4].copy()
+df["label"] = 1
 
-# drop timestamp because i don't want to use
-df = df.drop(columns=['timestamp'])
-
-# ratings >= 4 as positive interactions (label = 1)
-df = df[df['rating'] >= 4].copy()
-df['label'] = 1
-
-df.to_csv('./dataset/edited_ratings.csv', index=False)
-print("Complete Pre Data Processing")
+# Save processed data
+df.to_csv("./dataset/editing_ratings.csv", index=False)
+print(f"Processed {len(df)} positive interactions")

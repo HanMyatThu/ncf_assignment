@@ -1,6 +1,5 @@
 from torch.utils.data import Dataset
 import torch
-
 class NCFDataset(Dataset):
     def __init__(self, df):
         self.users = torch.tensor(df["userId"].values, dtype=torch.long)
