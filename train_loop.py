@@ -4,12 +4,12 @@ import torch.optim as optim
 from tqdm import tqdm
 import numpy as np
 
-def train_model(model, train_loader, val_loader, num_epochs=30, lr=0.001, patience=7, device='cpu'):
+def train_model(model, train_loader, val_loader, num_epochs=30, lr=0.001, patience=5, device='cpu'):
     model = model.to(device)
     # Binary Cross Entropy Loss
     criterion = nn.BCELoss()
     # Adam Optimizer
-    optimizer = optim.Adam(model.parameters(), lr=lr)
+    optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=1e-5)
 
     best_val_loss = float('inf')
     epochs_without_improvement = 0
