@@ -1,4 +1,7 @@
+# for my machine (window)
 import os
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+
 import json
 import time
 import pandas as pd
@@ -8,6 +11,7 @@ from itertools import product
 from datetime import datetime
 from tqdm import tqdm
 from torch.utils.data import DataLoader
+from sklearn.model_selection import train_test_split
 
 # Import from your merged script - assuming it's named "ncf_merged.py"
 # Adjust the import based on your actual filename
