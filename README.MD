@@ -52,6 +52,7 @@ Negative samples (default: 8 negatives per positive) are generated to create a b
 The processed data is split into training, validation, and test sets.
 
 ## Project Structure
+```bash
 .
 ├── dataset/
 │   ├── ratings.dat
@@ -68,6 +69,8 @@ The processed data is split into training, validation, and test sets.
 ├── <your_script_name>.py        # Main pipeline script (data processing, training, evaluation)
 ├── README.md
 └── requirements.txt             # (Optional) Generated with: pip freeze > requirements.txt
+
+```
 
 
 
