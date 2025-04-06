@@ -134,7 +134,7 @@ class NCFDataset(Dataset):
 class NCF(nn.Module):
     """Neural Collaborative Filtering model combining GMF and MLP"""
     def __init__(self, num_users, num_items, 
-                 embedding_size=64, mlp_layers=[128, 64, 32], dropout=0.3):
+                 embedding_size=64, mlp_layers=[128, 64, 32], dropout=0.1):
         super().__init__()
         
         # Embeddings
@@ -190,7 +190,7 @@ class NCF(nn.Module):
 
 # ============= Training Function =============
 
-def train_model(model, train_loader, val_loader, num_epochs=30, lr=0.001, patience=7, device='cpu'):
+def train_model(model, train_loader, val_loader, num_epochs=30, lr=0.0005, patience=7, device='cpu'):
     """Train the NCF model with early stopping"""
     model = model.to(device)
     # Binary Cross Entropy Loss
@@ -328,7 +328,7 @@ def main():
         # Prepare datasets and dataloaders
         train_set = NCFDataset(train_df)
         val_set = NCFDataset(val_df)
-        batch_size = 1024
+        batch_size = 512
         train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=True)
         val_loader = DataLoader(val_set, batch_size=batch_size)
 

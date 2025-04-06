@@ -1,0 +1,308 @@
+[
+    {
+        "experiment_name": "batch256",
+        "embedding_size": 64,
+        "learning_rate": 0.0005,
+        "batch_size": 256,
+        "dropout": 0.3,
+        "neg_samples": 8,
+        "mlp_layers": [
+            128,
+            64,
+            32
+        ],
+        "recall@10": 0.5618588150847551,
+        "ndcg@10": 0.5885183805169321,
+        "training_time": 472.6014311313629,
+        "model_path": "ablation_bat_20250406_115857/batch256.pt"
+    },
+    {
+        "experiment_name": "batch512",
+        "embedding_size": 64,
+        "learning_rate": 0.0005,
+        "batch_size": 512,
+        "dropout": 0.3,
+        "neg_samples": 8,
+        "mlp_layers": [
+            128,
+            64,
+            32
+        ],
+        "recall@10": 0.5650107406443334,
+        "ndcg@10": 0.5915667678089743,
+        "training_time": 341.61965894699097,
+        "model_path": "ablation_bat_20250406_115857/batch512.pt"
+    },
+    {
+        "experiment_name": "batch1024",
+        "embedding_size": 64,
+        "learning_rate": 0.0005,
+        "batch_size": 1024,
+        "dropout": 0.3,
+        "neg_samples": 8,
+        "mlp_layers": [
+            128,
+            64,
+            32
+        ],
+        "recall@10": 0.5648085483434166,
+        "ndcg@10": 0.5920180736879804,
+        "training_time": 251.7051169872284,
+        "model_path": "ablation_bat_20250406_115857/batch1024.pt"
+    },
+    {
+        "experiment_name": "drop0.1",
+        "embedding_size": 64,
+        "learning_rate": 0.0005,
+        "batch_size": 1024,
+        "dropout": 0.1,
+        "neg_samples": 8,
+        "mlp_layers": [
+            128,
+            64,
+            32
+        ],
+        "recall@10": 0.5638399841190963,
+        "ndcg@10": 0.5903695695299513,
+        "training_time": 268.8197567462921,
+        "model_path": "ablation_dro_20250406_105632/drop0.1.pt"
+    },
+    {
+        "experiment_name": "drop0.3",
+        "embedding_size": 64,
+        "learning_rate": 0.0005,
+        "batch_size": 1024,
+        "dropout": 0.3,
+        "neg_samples": 8,
+        "mlp_layers": [
+            128,
+            64,
+            32
+        ],
+        "recall@10": 0.5631144976349548,
+        "ndcg@10": 0.5901067639372752,
+        "training_time": 245.08177995681763,
+        "model_path": "ablation_dro_20250406_105632/drop0.3.pt"
+    },
+    {
+        "experiment_name": "drop0.5",
+        "embedding_size": 64,
+        "learning_rate": 0.0005,
+        "batch_size": 1024,
+        "dropout": 0.5,
+        "neg_samples": 8,
+        "mlp_layers": [
+            128,
+            64,
+            32
+        ],
+        "recall@10": 0.5636994486381599,
+        "ndcg@10": 0.5900093746975046,
+        "training_time": 236.99510192871094,
+        "model_path": "ablation_dro_20250406_105632/drop0.5.pt"
+    },
+    {
+        "experiment_name": "emb32",
+        "embedding_size": 32,
+        "learning_rate": 0.0005,
+        "batch_size": 1024,
+        "dropout": 0.3,
+        "neg_samples": 8,
+        "mlp_layers": [
+            128,
+            64,
+            32
+        ],
+        "recall@10": 0.5646122719420715,
+        "ndcg@10": 0.5906568126710953,
+        "training_time": 260.1568670272827,
+        "model_path": "ablation_emb_20250406_111705/emb32.pt"
+    },
+    {
+        "experiment_name": "emb64",
+        "embedding_size": 64,
+        "learning_rate": 0.0005,
+        "batch_size": 1024,
+        "dropout": 0.3,
+        "neg_samples": 8,
+        "mlp_layers": [
+            128,
+            64,
+            32
+        ],
+        "recall@10": 0.5670151788836566,
+        "ndcg@10": 0.5940717211233637,
+        "training_time": 243.66260290145874,
+        "model_path": "ablation_emb_20250406_111705/emb64.pt"
+    },
+    {
+        "experiment_name": "emb128",
+        "embedding_size": 128,
+        "learning_rate": 0.0005,
+        "batch_size": 1024,
+        "dropout": 0.3,
+        "neg_samples": 8,
+        "mlp_layers": [
+            128,
+            64,
+            32
+        ],
+        "recall@10": 0.5647208615653208,
+        "ndcg@10": 0.5915000602285588,
+        "training_time": 243.83691811561584,
+        "model_path": "ablation_emb_20250406_111705/emb128.pt"
+    },
+    {
+        "experiment_name": "lr0.0001",
+        "embedding_size": 64,
+        "learning_rate": 0.0001,
+        "batch_size": 1024,
+        "dropout": 0.3,
+        "neg_samples": 8,
+        "mlp_layers": [
+            128,
+            64,
+            32
+        ],
+        "recall@10": 0.5582664836681732,
+        "ndcg@10": 0.5852799094570513,
+        "training_time": 599.2703649997711,
+        "model_path": "ablation_lea_20250406_113821/lr0.0001.pt"
+    },
+    {
+        "experiment_name": "lr0.0005",
+        "embedding_size": 64,
+        "learning_rate": 0.0005,
+        "batch_size": 1024,
+        "dropout": 0.3,
+        "neg_samples": 8,
+        "mlp_layers": [
+            128,
+            64,
+            32
+        ],
+        "recall@10": 0.5652179943259951,
+        "ndcg@10": 0.5919351182370328,
+        "training_time": 265.8748269081116,
+        "model_path": "ablation_lea_20250406_113821/lr0.0005.pt"
+    },
+    {
+        "experiment_name": "lr0.001",
+        "embedding_size": 64,
+        "learning_rate": 0.001,
+        "batch_size": 1024,
+        "dropout": 0.3,
+        "neg_samples": 8,
+        "mlp_layers": [
+            128,
+            64,
+            32
+        ],
+        "recall@10": 0.560940798935664,
+        "ndcg@10": 0.5875301276044254,
+        "training_time": 196.25725197792053,
+        "model_path": "ablation_lea_20250406_113821/lr0.001.pt"
+    },
+    {
+        "experiment_name": "mlp64_32",
+        "embedding_size": 64,
+        "learning_rate": 0.0005,
+        "batch_size": 1024,
+        "dropout": 0.3,
+        "neg_samples": 8,
+        "mlp_layers": [
+            64,
+            32
+        ],
+        "recall@10": 0.5649291669624616,
+        "ndcg@10": 0.5915180340719606,
+        "training_time": 240.9918179512024,
+        "model_path": "ablation_mlp_20250406_123847/mlp64_32.pt"
+    },
+    {
+        "experiment_name": "mlp128_64_32",
+        "embedding_size": 64,
+        "learning_rate": 0.0005,
+        "batch_size": 1024,
+        "dropout": 0.3,
+        "neg_samples": 8,
+        "mlp_layers": [
+            128,
+            64,
+            32
+        ],
+        "recall@10": 0.5649879972970911,
+        "ndcg@10": 0.5913132350465975,
+        "training_time": 251.08938193321228,
+        "model_path": "ablation_mlp_20250406_123847/mlp128_64_32.pt"
+    },
+    {
+        "experiment_name": "mlp256_128_64_32",
+        "embedding_size": 64,
+        "learning_rate": 0.0005,
+        "batch_size": 1024,
+        "dropout": 0.3,
+        "neg_samples": 8,
+        "mlp_layers": [
+            256,
+            128,
+            64,
+            32
+        ],
+        "recall@10": 0.5627751221961923,
+        "ndcg@10": 0.5904469824914559,
+        "training_time": 260.12688517570496,
+        "model_path": "ablation_mlp_20250406_123847/mlp256_128_64_32.pt"
+    },
+    {
+        "experiment_name": "neg1",
+        "embedding_size": 64,
+        "learning_rate": 0.0005,
+        "batch_size": 1024,
+        "dropout": 0.3,
+        "neg_samples": 1,
+        "mlp_layers": [
+            128,
+            64,
+            32
+        ],
+        "recall@10": 0.5486014461201494,
+        "ndcg@10": 0.5639778897903373,
+        "training_time": 119.48823189735413,
+        "model_path": "ablation_neg_20250406_125855/neg1.pt"
+    },
+    {
+        "experiment_name": "neg4",
+        "embedding_size": 64,
+        "learning_rate": 0.0005,
+        "batch_size": 1024,
+        "dropout": 0.3,
+        "neg_samples": 4,
+        "mlp_layers": [
+            128,
+            64,
+            32
+        ],
+        "recall@10": 0.5641714716917632,
+        "ndcg@10": 0.5922497726690417,
+        "training_time": 270.0596740245819,
+        "model_path": "ablation_neg_20250406_125855/neg4.pt"
+    },
+    {
+        "experiment_name": "neg8",
+        "embedding_size": 64,
+        "learning_rate": 0.0005,
+        "batch_size": 1024,
+        "dropout": 0.3,
+        "neg_samples": 8,
+        "mlp_layers": [
+            128,
+            64,
+            32
+        ],
+        "recall@10": 0.5666111229429103,
+        "ndcg@10": 0.5925948689277204,
+        "training_time": 278.59390926361084,
+        "model_path": "ablation_neg_20250406_125855/neg8.pt"
+    }
+]
