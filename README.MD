@@ -66,9 +66,8 @@ The processed data is split into training, validation, and test sets.
 │   ├── train.csv                # Training split
 │   ├── val.csv                  # Validation split
 │   └── test.csv                 # Test split
-├── <your_script_name>.py        # Main pipeline script (data processing, training, evaluation)
+├── ncf_merged.py        # main file to run the simulation
 ├── README.md
-└── requirements.txt             # (Optional) Generated with: pip freeze > requirements.txt
 
 ```
 
