@@ -1,0 +1,57 @@
+# --- Python ---
+# Ignore bytecode compiled files
+__pycache__/
+*.pyc
+
+# --- Models & Outputs ---
+# Ignore trained model files (like ncf_model.pt)
+*.pt
+*.pth
+*.h5
+
+# Ignore output directories from experiments/runs
+# This pattern matches 'ablation_dro_20250406_105632' and similar future folders
+ablation_*/
+results/
+output/
+logs/
+
+# Ignore log files or temporary text outputs
+# This will ignore dataprocessing.txt and train.txt.
+# Comment out '*.txt' if you have essential .txt files you *want* to track.
+*.log
+*.txt
+
+# --- Virtual Environments ---
+# Common names for virtual environments
+venv/
+env/
+.venv/
+.env/
+ENV/
+VENV/
+
+# --- OS Specific Files ---
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+
+# --- Jupyter Notebook ---
+# Ignore checkpoints directory if you use Jupyter notebooks
+.ipynb_checkpoints/
+
+# --- IDE Configuration (Optional but common) ---
+# PyCharm
+.idea/
+# VS Code
+.vscode/
+
+# --- Data Files (Recommendation) ---
+# Data files (like those in dataset/) can become large.
+# Consider ignoring them if they can be easily downloaded or regenerated.
+# Uncomment the lines below specific to your project if you decide to ignore them:
+# dataset/*.csv
+# dataset/*.dat
+# Or ignore the entire dataset directory:
+# dataset/
